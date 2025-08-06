@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Implant - Birth Control Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo interactive-element" data-tooltip="Educational project about contraceptive implants">
+                <div class="logo-icon">
+                    <i class="fas fa-capsules"></i>
+                </div>
+                <span class="logo-text">The Implant</span>
+            </div>
+            <div class="header-actions">
+                <button class="theme-toggle interactive-element" id="themeToggle" data-tooltip="Switch between light and dark theme">
+                    <i class="fas fa-palette"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon interactive-element" data-tooltip="Click for animation">
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring delay-1"></div>
+                    <div class="pulse-ring delay-2"></div>
+                    <i class="fas fa-shield-check"></i>
+                </div>
+                <h1 class="hero-title">
+                    <span class="highlight-text">The Implant</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <strong class="custom-bold">Long-term birth control</strong> that works for you
+                </p>
+                <div class="hero-stats">
+                    <div class="stat interactive-element" data-tooltip="Effectiveness with typical use">
+                        <div class="stat-icon">
+                            <i class="fas fa-shield-check"></i>
+                        </div>
+                        <span class="stat-number" data-target="99">0</span><span class="stat-percent">%</span>
+                        <span class="stat-label">Effective</span>
+                    </div>
+                    <div class="stat interactive-element" data-tooltip="Duration of protection">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                </div>
+                <button class="cta-button interactive-element" id="learnMoreBtn">
+                    <span>Learn More</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is it Section -->
+    <section class="section what-is" id="what-is">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h2>What is <span class="highlight-text">The Implant</span>?</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="content-card expandable-card interactive-element" data-tooltip="Click to expand for more details">
+                <div class="card-header">
+                    <p class="card-intro">The implant is a <strong class="custom-bold">small, flexible plastic rod</strong> about the size of a matchstick. It's placed <strong class="custom-bold">under the skin</strong> of your upper arm by a healthcare provider.</p>
+                    <button class="expand-btn" aria-label="Expand for more information">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="card-expanded-content">
+                    <div class="expanded-info">
+                        <h4><i class="fas fa-info-circle"></i> Additional Information</h4>
+                        <p>The implant is made of a soft, flexible plastic called EVA (ethylene vinyl acetate). It contains a hormone called etonogestrel that is slowly released into your body over three years.</p>
+                        <p>The insertion procedure takes only a few minutes and is done with local anesthesia. You can feel the implant under your skin, but it's not visible to others.</p>
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="feature interactive-element" data-tooltip="Long-lasting protection without daily pills">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="feature-content">
+                            <span class="feature-title">Works for <strong class="custom-bold">3 years</strong></span>
+                            <span class="feature-desc">Set and forget protection</span>
+                        </div>
+                    </div>
+                    <div class="feature interactive-element" data-tooltip="More effective than birth control pills">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-check"></i>
+                        </div>
+                        <div class="feature-content">
+                            <span class="feature-title">Over <strong class="custom-bold">99% effective</strong></span>
+                            <span class="feature-desc">More reliable than the pill</span>
+                        </div>
+                    </div>
+                    <div class="feature interactive-element" data-tooltip="Can be removed anytime by a healthcare provider">
+                        <div class="feature-icon">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                        <div class="feature-content">
+                            <span class="feature-title"><strong class="custom-bold">Reversible</strong> anytime</span>
+                            <span class="feature-desc">Fertility returns quickly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works Section -->
+    <section class="section how-works" id="how-works">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h2>How Does <span class="highlight-text">It Work</span>?</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-line"></div>
+                <div class="step interactive-element" data-tooltip="Click to learn more about hormone release" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-capsules"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3><strong class="custom-bold">Hormone Release</strong></h3>
+                        <p>Releases <strong class="custom-bold">progestin hormone</strong> slowly into your body</p>
+                        <div class="step-detail">
+                            <span class="detail-tag">Continuous release</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step interactive-element" data-tooltip="Click to learn more about ovulation prevention" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3><strong class="custom-bold">Prevents Ovulation</strong></h3>
+                        <p>Stops your ovaries from <strong class="custom-bold">releasing eggs</strong></p>
+                        <div class="step-detail">
+                            <span class="detail-tag">Primary mechanism</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step interactive-element" data-tooltip="Click to learn more about extra protection" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3><strong class="custom-bold">Extra Protection</strong></h3>
+                        <p>Thickens <strong class="custom-bold">cervical mucus</strong> to block sperm</p>
+                        <div class="step-detail">
+                            <span class="detail-tag">Backup protection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types Section -->
+    <section class="section types" id="types">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-list"></i>
+                </div>
+                <h2><span class="highlight-text">Types</span> Available</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="types-grid">
+                <div class="type-card interactive-element popular" data-tooltip="Most recommended and widely used option">
+                    <div class="popular-badge">
+                        <i class="fas fa-crown"></i>
+                        <span>Most Popular</span>
+                    </div>
+                    <div class="type-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3><strong class="custom-bold">Nexplanon</strong></h3>
+                    <p><strong class="custom-bold">Most common brand.</strong> Single rod that lasts 3 years.</p>
+                    <div class="type-features">
+                        <span class="feature-tag primary">68mg etonogestrel</span>
+                        <span class="feature-tag secondary">Radiopaque</span>
+                    </div>
+                    <div class="type-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Easy to locate</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Latest technology</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-card interactive-element" data-tooltip="Previous generation implant">
+                    <div class="type-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3><strong class="custom-bold">Implanon</strong></h3>
+                    <p><strong class="custom-bold">Previous version,</strong> being replaced by Nexplanon.</p>
+                    <div class="type-features">
+                        <span class="feature-tag primary">68mg etonogestrel</span>
+                        <span class="feature-tag warning">Non-radiopaque</span>
+                        <span class="feature-tag info">Being phased out</span>
+                    </div>
+                    <div class="type-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Same effectiveness</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Less available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h2><span class="highlight-text">Cost</span> in Argentina</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">
+                    <strong class="custom-bold">Prices vary by brand</strong> - Information consulted at pharmacy
+                </p>
+            </div>
+            <div class="pricing-cards">
+                <div class="price-card interactive-element recommended" data-tooltip="Best value option - completely free">
+                    <div class="recommended-badge">
+                        <i class="fas fa-heart"></i>
+                        <span>Recommended</span>
+                    </div>
+                    <div class="price-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3><strong class="custom-bold">Public Hospitals</strong></h3>
+                    <div class="price free">FREE</div>
+                    <p>Available at <strong class="custom-bold">no cost</strong> in public healthcare system</p>
+                    <div class="price-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Insertion included</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Follow-up care</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>All brands available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-card interactive-element" data-tooltip="Private healthcare option with faster service">
+                    <div class="price-icon">
+                        <i class="fas fa-clinic-medical"></i>
+                    </div>
+                    <h3><strong class="custom-bold">Private Clinics</strong></h3>
+                    <div class="price" data-target="500000">$0 ARS</div>
+                    <p><strong class="custom-bold">Price varies by brand</strong> - includes consultation and insertion</p>
+                    <div class="price-breakdown">
+                        <div class="breakdown-item">
+                            <span class="brand">Nexplanon:</span>
+                            <span class="brand-price" data-range="480000-520000">$480,000 - $520,000</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="brand">Implanon:</span>
+                            <span class="brand-price" data-range="450000-480000">$450,000 - $480,000</span>
+                        </div>
+                    </div>
+                    <div class="price-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Faster appointment</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-md"></i>
+                            <span>Private consultation</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Brand choice</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-note">
+                <i class="fas fa-info-circle"></i>
+                <p><strong class="custom-bold">Note:</strong> Prices consulted at local pharmacy and may vary by location and provider.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section video-section" id="video">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <h2><span class="highlight-text">Learn</span> More</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">
+                    Watch this <strong class="custom-bold">educational video</strong> to understand everything about the implant
+                </p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper interactive-element" data-tooltip="Click to play educational video">
+                    <div class="video-overlay" id="videoOverlay">
+                        <div class="video-play-btn">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="play-ripple"></div>
+                            <div class="play-ripple delay-1"></div>
+                        </div>
+                        <div class="video-info">
+                            <h4><strong class="custom-bold">The Implant Explained</strong></h4>
+                            <p>Complete guide and FAQ</p>
+                        </div>
+                    </div>
+                    <iframe id="youtube-video"
+                        data-src="https://www.youtube.com/embed/ioVohgaQSm8?autoplay=1&rel=0&modestbranding=1"
+                        title="The Implant Explained" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-features">
+                    <div class="video-feature">
+                        <i class="fas fa-clock"></i>
+                        <span>5 min watch</span>
+                    </div>
+                    <div class="video-feature">
+                        <i class="fas fa-cc"></i>
+                        <span>Subtitles available</span>
+                    </div>
+                    <div class="video-feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Mobile optimized</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="student-credit">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Made by Enzo Benítez</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
