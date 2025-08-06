@@ -113,6 +113,12 @@ body {
     display: inline;
 }
 
+.hero-bold {
+    font-weight: 700;
+    color: var(--white);
+    display: inline;
+}
+
 .highlight-text {
     color: var(--accent-color);
     font-weight: 700;

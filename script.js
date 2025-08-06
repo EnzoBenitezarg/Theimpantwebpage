@@ -246,12 +246,6 @@ function initScrollAnimations() {
 
 // ===== INTERACTIVE ELEMENTS =====
 function initInteractiveElements() {
-    const heroIcon = document.querySelector('.hero-icon');
-    if (heroIcon) {
-        heroIcon.addEventListener('click', function () {
-            createPulseEffect(this);
-        });
-    }
 
     const logo = document.querySelector('.logo');
     let clickCount = 0;
